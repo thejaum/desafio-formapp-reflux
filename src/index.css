@@ -1,0 +1,24 @@
+.container-grid {
+  overflow: hidden;
+  border-radius: 5px;
+  background-color: #e4e4e48a;
+  border: 2px solid #8291c765;
+}
+
+.actions-container{
+  display: inline-flex;
+}
+
+.actions-edit {
+  padding: 5px;
+}
+.actions-edit span:hover {
+  cursor: pointer;
+}
+
+.actions-remove {
+  padding: 5px;
+}
+.actions-remove span:hover {
+  cursor: pointer;
+}
