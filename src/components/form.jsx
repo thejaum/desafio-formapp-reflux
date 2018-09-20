@@ -32,6 +32,11 @@ class FormApp extends Reflux.Component {
 
     toAddrow(){
         if(this.check())GridActions.addrow(this.props.form.getFieldsValue());
+        const { form } = this.props;
+        form.setFieldsValue({
+            name:"" ,
+            nickname:""
+        })
     }
 
     handleFields = () => {
@@ -45,7 +50,7 @@ class FormApp extends Reflux.Component {
     
     render(){
         const { getFieldDecorator } = this.props.form;
-        
+
         return( 
             <div className="form-app">
                 <FormItem {...formItemLayout} label="Nome">
